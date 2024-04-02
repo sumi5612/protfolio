@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumi portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/de4bb45f84.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="python.png">
+    <style>
+        
+        .l{
+            cursor: pointer;
+            color: white;
+            margin-top: 8px;
+        
+            
+        }
+        .l:hover{
+            color: rgb(16, 4, 4);
+        }
+        #cd{
+            
+            border: 0px solid rgb(12, 12, 12);
+            box-shadow: 2px 2px 20px rgb(0, 0, 0);
+            border-radius: 8px; 
+            padding-left: 200px;
+        }
+        .sumi{
+            display: block;
+            margin: 0 auto;
+            
+        }
+        .sh{
+            padding-left: 200px;
+            border-radius: 8px;
+        }
+
+
+        .logo{
+            font-size: 30px;
+            color: rgb(30, 196, 222);
+            margin: 3px;
+          
+        }
+        .hdn{
+            display: none;
+        }
+        .logo:hover{
+            font-size: 30px;
+            color: rgb(47, 18, 162);
+              
+        }
+        .project{
+            text-align: center;
+            margin-top: 250px;
+            
+        }
+.project1{
+    color: rgb(11, 11, 9);
+    background-color: yellow;
+    font-weight: bold;
+}
+.project1:hover{
+    color: rgb(47, 47, 36);
+    background-color: rgb(128, 128, 190);
+    font-weight: bold;
+}
+        .distance{
+            
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 50%;
+            border: 1px solid;
+            
+        }
+        .card-div{
+            width: 100%; 
+            
+        }
+        .cards{
+            
+            
+            display: flex; 
+            justify-content: space-around;
+            
+        }
+        
+        .c{
+            border: 2px solid;
+            box-shadow: 2px 2px 20px rgb(0, 0, 0);
+            width: 300px;
+            height: 300px;
+            
+            
+        }
+        .animationabotme{
+            
+            position: relative;
+            animation-name: bottom-top-abotme;
+            animation-duration: 4s;
+            animation-delay: 0.5s;
+        }
+        .animationwe{
+            position: relative;
+            animation-name: bottom-top-we;
+            animation-duration: 4s;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes bottom-top-abotme{
+            from {
+                top: -500px;
+            }
+            to{
+                
+                top: 0px;
+            }
+        }
+        @keyframes bottom-top-we{
+            from {
+                
+                top: -1200px;
+            }
+            to{
+                top: 0px;
+            }
+        }
+        .hidden{
+            display: none;
+        }
+        
+
+        .card,.card-header,.card-body,.card-footer{
+            border: 0px;
+        }
+       
+    
+        
+        
+
+
+        @media only screen and (max-width: 767px){
+            .l{
+            font-size: 10pt;
+        }
+        #cd{
+            margin-top: 40%;
+
+
+        }
+            .sumi{
+                width: 150px;
+                height: 150px;
+                
+                
+            }
+            
+            #specialize-div{
+                height: 250px;
+                overflow: auto;
+            }
+            
+            .cards{
+                flex-wrap: wrap;
+                
+            }
+            .c{
+                margin-top: 5px;
+            }
+        
+      
+    }
+    </style>
+</head>
+<body>
+
+    <div class="card ">
+        <div class="card-header">
+
+            <nav class="navbar navbar-expand bg-info ">
+
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a  class=" l nav-link "  href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <p class="l nav-link  "  onclick="toggleAboutMe()">About Me</p>
+                    </li>
+                    <li class="nav-menu ">
+                        <p  class="l nav-link "  onclick="toggleWorkExperience()">Services</p>
+                    </li>
+                    <li class="nav-menu ">
+                        <a class="l nav-link  " href="https://drive.google.com/file/d/10Hp6XtSwtW9OIYiVwHCUTFe_BI5zc3Dz/view?usp=sharing">Resume</a>
+                    </li>
+                </ul>
+                
+            </nav>
+
+        </div>
+
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 col-sm-5">
+                        
+                        <div style="display: flex; justify-content: center; align-items: center;height: 300px;">
+                            <div>
+                                <h1 style="display: block;">Hello</h1>
+                                <h1 style="display: block;">I'm Sumi Akter</h1>
+                                <h5 style="display: block;">Web design & Developer</h5>
+                                <button type="button" class="btn mt-3 bg-info "  onclick="toggletalk()">Let's talk</button>
+                                
+                                
+                                <div class="logo hdn" id="talk">
+                                    
+                
+                                    <br>
+                                        <span ><i class="fas fa-user-graduate"></i></span>
+                                        <span ><i class="fab fa-github"></i></span>
+                                        <span ><i class="fab fa-linkedin"></i></span></div>
+
+
+                                </div>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="sh">
+                            <img class="sumi" class="justify-content-center m-auto" src="sumi.jpg" width="300px" height="300px">
+                        </div>
+                 
+
+                    <div id="aboutme" class="animationabotme hidden">
+                        <div style="margin-top: 50px; display: flex; justify-content: center;">
+                            <div class="card" style="width: 70%; color: rgb(8, 8, 8);">
+                                <h1 style="display: block; margin: 0 auto;">About Me</h1>
+                                <img style="border-radius: 50%; display: block; margin: 0 auto;" src="sumi.jpg" width="120px" height="120px">
+                                <p>Hello, Hello, I'm a web designer and developer from Saidpur, Nilphamari, Bangladesh. I create efficient & innovative experiences that meet user needs and business goals.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+
+                    <div style="width: 100%;margin-top: 30px; display: flex; justify-content: center;">
+                        <h1 class="d-block">Specializing in</h1>
+                    </div>
+                    
+                    <div class="card">
+                        I specialize in developing websites, encompassing information systems, responsive designer, meticulous diagram creation for better understanding, integrated coding, and thorough testing in conjunction with the Software Development Life Cycle (SDLC).
+                    </div>
+
+                    <div class="container" id="specialize-div" 
+                    style="flex-wrap: wrap; margin-top: 20px; display: flex; justify-content: center;
+                    border: 1px solid;  box-shadow: 2px 2px 20px rgb(208, 206, 206);">
+                        
+                        <img style=" margin-top: 5px; border-radius: 50%; border: 1px solid;"  src="html.png" width="80px" height="80px">
+                        <img class="distance" src="css.png" width="80px" height="80px">
+                        <img class="distance" src="javascript.jpg" width="80px" height="80px">
+                        <img class="distance" src="js.jpg" width="80px" height="80px">
+                        <img class="distance" src="visual studio.jpg" width="80px" height="80px">
+                        <img class="distance" src="PHP.png" width="80px" height="80px">
+                        <img class="distance" src="c.png" width="80px" height="80px">
+                        <img class="distance" src="c++.avif" width="80px" height="80px">
+                        <img class="distance" src="sql.webp" width="80px" height="80px">
+                        <img class="distance" src="xampp.png" width="80px" height="80px">
+                        <img class="distance" src="draw.io.png" width="80px" height="80px">
+                        <img class="distance" src="python.png" width="80px" height="80px">
+                        <img class="distance" src="code block.jpg" width="80px" height="80px">
+                        <img class="distance" src="cisco.jpg" width="80px" height="80px">
+                        <img class="distance" src="notepad.png" width="80px" height="80px">
+                        <img class="distance" src="notepad++.jpg" width="80px" height="80px">
+                        <img class="distance" src="server.jpg" width="80px" height="80px">
+                        <img class="distance" src="firebase.png" width="80px" height="80px">
+                        <img class="distance" src="android studio.png" width="80px" height="80px">
+                        <img class="distance" src="apache.jpg" width="80px" height="80px">
+                    </div>
+
+                    <div id="we" class="animationwe hidden card-div">
+                        <h1 style="display: block; text-align: center; margin-top: 20px;">My services</h1>
+                        <div class="cards">
+
+                            <div class="c" class="card " style="background-image: url('calculator.jpg'); background-repeat: no-repeat;background-size: cover;">
+                                <div class="project"><button class="project1" href="">View Project</button>    </div>  
+                            </div>
+                               
+                            <div class="c" class="card " style="background-image: url('log.webp');background-repeat: no-repeat;background-size: cover;">
+                                <div class="project"><button class="project1" href="">View Project</button></div>
+                            </div>
+    
+                            <div class="c" class="card " style="background-image: url('marksheet.png');background-repeat: no-repeat;background-size: cover;">
+                                <div class="project"><button class="project1" href="https://sumi5612.github.io/count/count.html">View Project</button></div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer text-center">
+            <span style="font-size: 8pt; color:black;">Created by_Sumi Akter</span> <br>
+            <span style="font-size: 8pt; color: black;">Sumi_akter1990@gmail.com</span>
+        </div>
+
+    </div>
+
+
+    <script>
+        /* for solve dclick
+        function aboutmehideopen(){
+            let x = document.getElementById('aboutme').style.display;
+
+            if(x=== 'none')
+            {
+                document.getElementById('aboutme').style.display = 'block';
+            }
+            else{
+                document.getElementById('aboutme').style.display = 'none';
+            }
+            
+        }
+
+        function wehideopen(){
+            let x = document.getElementById('we').style.display;
+
+            if(x==='none'){
+                document.getElementById('we').style.display = 'block';
+            }else{
+                document.getElementById('we').style.display = 'none';
+            }
+        }*/
+
+       
+    function toggleAboutMe() {
+        var x = document.getElementById('aboutme');
+        x.classList.toggle('hidden');
+    }
+
+    function toggleWorkExperience() {
+        var x = document.getElementById('we');
+        x.classList.toggle('hidden');
+    }
+
+
+    function toggletalk() {
+        
+        var y = document.getElementById('talk');
+        y.classList.toggle('hdn');
+
+}
+
+    </script>
+    
+</body>
+</html>
